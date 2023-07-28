@@ -1,0 +1,82 @@
+.homeSection {
+    margin: 80px;
+
+    .homeContent {
+        display: flex;
+        width: 1000px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+
+        .homeLeft {
+            .name {
+                flex-direction: column;
+                display: flex;
+                font-size: 80px;
+                font-weight: 500;
+
+                .firstText {
+                    animation: typewriter 2s steps(40) forwards;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+
+                .secondText {
+                    opacity: 0;
+                    animation: typewriter 2s steps(40) forwards;
+                    animation-delay: 0.9s;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                gap: 10px;
+
+                .button {
+                    border: 1px solid black;
+                    padding: 15px;
+                    margin-block: 10px;
+                    border-radius: 10px;
+                    width: 25%;
+                    text-align: center;
+                    font-weight: 500;
+                    margin-top: 20px;
+                }
+
+                .button:hover {
+                    background-color: rgb(56, 56, 56);
+                    color: white;
+                    transition: all 0.4s;
+                    cursor: pointer;
+                    border: 1px solid white;
+                }
+            }
+        }
+
+        .homeRight {
+            width: 300px;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .separator {
+        margin-top: 50px;
+    }
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        opacity: 100;
+        width: 100%;
+    }
+}

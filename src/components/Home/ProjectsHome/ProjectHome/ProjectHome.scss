@@ -1,0 +1,33 @@
+.projectSection {
+    .projectContent {
+        .project {
+            margin-block: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+
+            .projectImg {
+                width: 200px;
+                overflow: hidden;
+                border-radius: 10px;
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            .projectTitle {
+                width: 200px;
+                font-weight: 500;
+                padding-block: 10px;
+            }
+        }
+
+        .project:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.skillsSection {
+    width: 1000px;
+    margin: 0 auto;
+
+    .skillsContent {
+        margin-block: 100px;
+
+        .skillsGraph {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 0 30px;
+            padding-bottom: 30px;
+
+            .skill {
+                margin-block: 10px;
+
+                .skillText {
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .skillsButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-block-start: 30px;
+
+            .button {
+                border-radius: 10px;
+                text-align: center;
+                padding: 20px 15px;
+                border: 1px solid black;
+                width: 20%;
+                font-weight: 500;
+            }
+
+            .button:hover {
+                background-color: rgb(56, 56, 56);
+                color: white;
+                transition: all 0.4s;
+                cursor: pointer;
+                border: 1px solid white;
+            }
+        }
+    }
+}
