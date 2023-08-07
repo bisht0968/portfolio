@@ -1,6 +1,8 @@
 .headerSection {
-    margin: 40px 20px;
+    margin: 0 20px;
     position: sticky;
+    padding-top: 40px;
+    border-radius: 10px;
     top: 0;
     z-index: 99;
     background-color: white;
@@ -49,16 +51,7 @@
     }
 }
 
-@keyframes bottomTagLine {
-    0% {
-        width: 0%;
-    }
-
-    50% {
-        width: 50%;
-    }
-
-    100% {
-        width: 100%;
-    }
+.visible {
+    transform: translateY(-200%);
+    transition: all 0.4s;
 }

@@ -1,5 +1,5 @@
 .footerSection {
-    border-top: 1px dotted rgba(0, 0, 0, 0.7);
+    background-color: rgba(105, 105, 105, 0.05);
 
     .footerContent {
         display: flex;
@@ -9,6 +9,10 @@
         font-size: 18px;
         font-weight: 500;
         padding: 100px 0;
+
+        .linkSection li:hover {
+            cursor: pointer;
+        }
 
         .section {
             list-style: none;
@@ -44,6 +48,10 @@
 
                 svg {
                     font-size: 20px;
+                }
+
+                a {
+                    color: black;
                 }
             }
 

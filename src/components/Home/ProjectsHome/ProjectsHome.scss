@@ -1,18 +1,18 @@
-.projectsSection {
+.projectsHomeSection {
     width: 1000px;
     margin: 0 auto;
 
-    .projectsContent {
+    .projectsHomeContent {
         margin-block: 100px;
 
-        .projectsContainer {
+        .projectsHomeContainer {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
         }
 
-        .projectsButton {
+        .projectsHomeButton {
             display: flex;
             justify-content: center;
             align-items: center;

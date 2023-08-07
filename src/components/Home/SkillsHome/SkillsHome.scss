@@ -1,20 +1,20 @@
-.skillsSection {
+.skillsHomeSection {
     width: 1000px;
     margin: 0 auto;
 
-    .skillsContent {
+    .skillsHomeContent {
         margin-block: 100px;
 
-        .skillsGraph {
+        .skillsHomeGraph {
             border: 1px solid rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             padding: 0 30px;
             padding-bottom: 30px;
 
-            .skill {
+            .skillHome {
                 margin-block: 10px;
 
-                .skillText {
+                .skillHomeText {
                     margin-bottom: 10px;
                     margin-top: 20px;
                     font-weight: 500;
@@ -22,7 +22,7 @@
             }
         }
 
-        .skillsButton {
+        .skillsHomeButton {
             display: flex;
             justify-content: center;
             align-items: center;
