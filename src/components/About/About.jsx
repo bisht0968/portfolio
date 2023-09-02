@@ -8,7 +8,9 @@ export default function AboutHome() {
         <div className='aboutHomeSection'>
             <div className="aboutHomeContent">
                 <div className="text">
-                    I'm <span>Rahul Bisht </span>, a highly motivated third-year student pursuing a Bachelor's degree in Computer Science. With a deep passion for technology and software development, I specialize in full-stack web designing and am currently exploring projects integrating AI and ML with DSA. Constantly seeking to stay at the forefront of technological advancements, I thrive on solving complex problems and collaborating with like-minded individuals to create innovative solutions. In my free time, you'll find me cooking, playing football, and diving into captivating novels, all while maintaining a healthy work-life balance. I'm excited about contributing my skills to impactful projects and connecting with fellow enthusiasts and professionals in the field.
+                    I'm <span>Rahul Bisht</span>, a highly motivated <span>Third-year</span> student pursuing a Bachelor's degree in Computer Science. My passion lies in technology and software development, specializing in <span>full-stack web design.</span> Currently, I'm exploring projects that merge AI and ML with <span>data structures and algorithms (DSA).</span> I excel at solving complex problems and thrive on collaborating with like-minded individuals to craft innovative solutions.
+                    <br />
+                    During my free time, you'll find me solving coding problems, playing football, and immersing myself in captivating novels—all while maintaining a balanced work-life routine. I'm enthusiastic about contributing my skills to impactful projects and connecting with fellow enthusiasts and professionals in the field.
                 </div>
                 <div className="resumeText">
                     <span>
