@@ -1,24 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./ProjectArchiveItem.scss"
 
-export default function ProjectArchiveItem() {
+export default function ProjectArchiveItem({ data }) {
+    const [words, setWords] = useState([]);
+
+    useEffect(() => {
+        if (data.builtWith && data.builtWith.trim() !== "") {
+            const words = data.builtWith.split(' ');
+            setWords(words);
+        } else {
+            setWords([]);
+        }
+    }, [data.builtWith]);
+
     return (
         <div className='projectArchiveItemSection'>
             <div className="projectArchiveItemContent">
                 <div className="projectArchiveItemContainer">
                     <span className='year'>
-                        2021 - 2022
+                        {data.year}
                     </span>
                     <span>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, animi.
+                        {data.title}
                     </span>
                     <span className='builtWithContainer'>
-                        <span className="builtWith">
-                            reactjs
-                        </span>
+                        {words.map((word, index) => (
+                            <span key={index} className='builtWith'>
+                                {word}
+                                {index !== words.length - 1 && ' '}
+                            </span>
+                        ))}
                     </span>
                     <span className='navLink'>
-                        Lorem ipsum dolor sit amet consectetur.
+                        {data.url}
                     </span>
                 </div>
             </div>

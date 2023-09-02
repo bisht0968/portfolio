@@ -1,24 +1,25 @@
 import React from 'react'
 import "./Project.scss"
-import Pic from "../../Assets/passport.jpg"
 import { FiArrowUpRight } from "react-icons/fi"
 
-export default function Project() {
+export default function Project({ title, description, url, image }) {
     return (
         <div className='projectSection'>
             <div className="projectContent">
-                <div className="projectContainer">
+                <div className="projectContainer" onClick={() => {
+                    window.open(url, '_blank');
+                }}>
                     <div className="prjectImage">
-                        <img src={Pic} alt="" />
+                        <img src={`http://127.0.0.1:8000/${image}`} alt={title} />
                     </div>
                     <div className="projectDescription">
                         <div className="projectTitle">
-                            E Commerce <span><FiArrowUpRight /></span>
+                            {title} <span><FiArrowUpRight /></span>
                         </div>
-                        <div className="projectText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto unde temporibus exercitationem quo blanditiis asperiores labore ipsa incidunt optio ipsam.</div>
+                        <div className="projectText">{description}</div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
