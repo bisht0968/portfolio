@@ -14,6 +14,20 @@ export default function Home() {
     const [active, setActive] = useState('about')
     const navigate = useNavigate();
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY >= 600) {
+                setActive('projects');
+            } else {
+                setActive('about');
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div className='homeSection '>
             <div className="homeContent">
