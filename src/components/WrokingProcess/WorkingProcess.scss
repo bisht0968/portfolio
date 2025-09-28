@@ -1,0 +1,25 @@
+.working-process-section {
+    margin-block: 80px;
+
+    .working-process-container {
+
+        width: 800px;
+        margin: 0 auto;
+
+        .working-process-container-heading {
+            margin-block: 30px;
+            text-align: center;
+            color: rgb(193, 193, 193);
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .working-process-container-boxes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    }
+}

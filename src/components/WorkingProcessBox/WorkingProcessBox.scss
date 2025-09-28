@@ -1,0 +1,40 @@
+.working-process-box-section {
+    .working-process-box-container {
+        border: 1px solid rgb(57, 57, 57);
+
+        padding: 20px 10px;
+
+        width: 200px;
+        height: 331px;
+
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        .working-process-box-container-image {
+
+            height: 200px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .working-process-box-container-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .working-process-box-container-description {
+            font-size: 14px;
+            color: rgb(193, 193, 193);
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.connect-section {
+    margin-block: 100px;
+
+    .connect-container {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+
+        .connect-container-text {
+            margin-block: 30px;
+
+            h1 {
+                span {
+                    color: white;
+                    font-size: 50px;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    span {
+                        background: linear-gradient(90deg, #891be9, #e8d543);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        color: transparent;
+                    }
+
+                }
+            }
+
+            p {
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+
+        .connect-container-button {
+            button {
+                padding: 10px 40px;
+                border-radius: 10px;
+                border: 1px solid white;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                    border: 1px solid white;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}

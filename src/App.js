@@ -1,14 +1,19 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Home from "./components/Home/Home"
-import ProjectArchive from './components/ProjectArchive/ProjectArchive';
+import Home from "./Pages/Home"
 
 function App() {
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+
+  document.body.style = 'font-family: "Roboto", sans-serif;'
+
   return (
     <>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/archive' element={<ProjectArchive />} />
       </Routes>
     </>
   );

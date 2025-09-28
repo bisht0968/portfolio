@@ -1,0 +1,114 @@
+.hero-section {
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .hero-container-image {
+            height: 500px;
+            z-index: -1;
+
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+
+
+                -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+                -webkit-mask-repeat: no-repeat;
+                -webkit-mask-size: cover;
+
+                mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+                mask-repeat: no-repeat;
+                mask-size: cover;
+            }
+
+            background: rgb(43, 43, 43);
+
+        }
+
+        .hero-container-text {
+            margin-top: -50px;
+            text-align: center;
+            color: rgb(193, 193, 193);
+
+            position: relative;
+            top: -20px;
+
+            h1 {
+                font-size: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                span {
+                    background: linear-gradient(90deg, #891be9, #e8d543);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    color: transparent;
+                }
+            }
+
+            p {
+                max-width: 600px;
+                margin: 0 auto;
+                position: relative;
+                top: -20px;
+
+            }
+
+            h4 {
+                font-size: 30px;
+                margin: 0 auto;
+            }
+        }
+
+        .hero-container-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            button {
+                padding: 10px 20px;
+                border-radius: 10px;
+                width: 200px;
+                margin-block: 20px;
+            }
+
+
+            .hero-container-buttons-1 {
+                background-color: white;
+                color: black;
+                border: 1px solid white;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                    border: 1px solid white;
+                }
+            }
+
+            .hero-container-buttons-2 {
+                transition: all 0.3s ease-in-out;
+                background-color: black;
+                color: white;
+                border: 1px solid white;
+                cursor: pointer;
+
+                &:hover {
+                    border: 1px solid white;
+                    color: black;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

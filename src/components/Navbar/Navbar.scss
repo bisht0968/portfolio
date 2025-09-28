@@ -1,0 +1,52 @@
+.navbar-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+
+    &.scrolled {
+        background: black;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(to right, black 0%, white 50%, black 100%);
+    }
+
+    .navbar-container {
+        display: flex;
+        padding-inline: 30px;
+        justify-content: space-around;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            li {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .navbar-contact {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

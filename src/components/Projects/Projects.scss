@@ -1,0 +1,23 @@
+.projects-section {
+    .projects-container {
+        margin-block: 40px;
+
+        .projects-container-heading {
+            margin-block-start: 60px;
+            text-align: center;
+            color: rgb(193, 193, 193);
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .projects-container-box {
+            width: 800px;
+            margin: 0 auto;
+            padding-block: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+}

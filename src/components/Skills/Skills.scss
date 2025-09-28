@@ -1,0 +1,27 @@
+.skills-section {
+    .skills-container {
+        margin-block: 40px;
+
+        .skills-container-text {
+            margin-block: 30px;
+            text-align: center;
+            color: rgb(193, 193, 193);
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .skills-container-box {
+            background-color: rgb(29, 29, 29);
+            border: 1px solid rgb(57, 57, 57);
+            width: 500px;
+            margin: 0 auto;
+            border-radius: 10px;
+            padding-block: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    }
+}
